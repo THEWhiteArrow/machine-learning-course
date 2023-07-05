@@ -1,0 +1,59 @@
+############################### REGRESSION
+assumptions of linear regression:
+
+linearity
+homoscedasctcity
+multivariate normality
+independence
+lack of multicollinearity
+the outlier check
+
+statistical significance
+
+dummy variable trap
+
+
+5 methods of building a model
+all-in
+backward elimination
+	select a significance level eq. 5%
+	fit the full model with all posible predictors
+	consider the predictor wit the highest P-value  if P>SL go to step 4 else go to FIN
+	remove the predictor
+	fit the model without ths variable
+	
+forward selection
+	select a significance level eq. 5%
+	fit all simple regression models y~xn , select the one with the lowest P-value
+	keep this variable and fit all possible models with the one extra predictor added o the one(s) you already have
+	consider the predictor with the lowest P-value. if P < SL go to step 3, ekse go to FIN
+	
+bidirectional elimination
+	select SL to enter and to stay in the model , SLENTER = 5% , SLSTAY = 5%
+	perform the next step of forward selection (new variable must have P<SLENTER to enter)
+	perform all steps of backward elimination (old variables must have P < SLSTAY to stay)
+	no new variables can enter and no old bariables can exit
+	
+score comparison
+
+
+r^2 = 1 - SSres / SStot
+
+adj R^2 = 1 - (1-R^2) * (n-1)/ (n-k-1)
+
+
+
+
+############################### CLASSIFICATION
+
+Logistic Regression
+	ln (p)/(1-p)
+	
+K-Nearest Neighbors (K-NN)
+Support Vector Machine (SVM)
+Kernel SVM
+Naive Bayes
+Decision Tree Classification
+Random Forest Classification
+
+
